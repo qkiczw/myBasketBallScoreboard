@@ -77,4 +77,30 @@
   font-size: 70px;
   font-weight: bold;
 }
+.countdown__timer__minutes,
+.countdown__timer__seconds {
+  width: 45%;
+}
+.countdown__timer--increase,
+.countdown__timer--decrease {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  
+}
 
+.countdown__timer__current--minutes,
+.countdown__timer__current--seconds {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+}
+.btn__increase--time,
+.btn__decrease--time {
+  color: #ffffff;
+  border: none;
+  background: none;
+  font-size: 50px;
+  cursor: pointer;
+}
