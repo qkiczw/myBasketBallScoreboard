@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn__start,
+.btn__pause,
+.btn__reset {
+  width:75%;
+  padding: 10px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #ffffff;
+
+}
+.app__container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ef6c00;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: epeat(2, 1fr);
+
+  grid-template-areas: 
+    "team01 time team02"
+    "points-home buttons points-away";
+
+    font-family: sans-serif;
+  color: #ffffff;
+}
+
+.teams {
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.teams__team {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+.team__score {
+  font-size: 100px;
+}
+
+.score__home {
+  grid-area: score-home;
+
+}
+.countdown__time {
+  grid-area: time;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: bold;
+}
