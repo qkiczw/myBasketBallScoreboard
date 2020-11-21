@@ -69,7 +69,7 @@
   grid-area: score-home;
 
 }
-.countdown__time {
+.countdown__timer {
   grid-area: time;
   display: flex;
   justify-content: center;
@@ -77,3 +77,4 @@
   font-size: 70px;
   font-weight: bold;
 }
+

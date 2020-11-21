@@ -1,7 +1,7 @@
 const BTN_START = document.querySelector('.btn__start');
 const BTN_PAUSE= document.querySelector('.btn__pause');
-let countDownElMinutes = document.querySelector('.countdown__time-minutes');
-let countDownElSeconds = document.querySelector('.countdown__time-seconds');
+let countDownElMinutes = document.querySelector('.countdown__timer__current--minutes');
+let countDownElSeconds = document.querySelector('.countdown__timer__current--seconds');
 
 let defaultSartMinutes = 0;
 let defaultSartSeconds = 0;
@@ -25,7 +25,10 @@ function updateCountdown() {
     let seconds = time % 60;
     seconds = seconds < 10 ? `0${seconds}` : seconds;
     
-    countDownEl.innerHTML = `${minutes}:${seconds}`;
+    countDownElMinutes.innerHTML = minutes;
+    countDownElSeconds.innerHTML = seconds;
+
+    // countDownEl.innerHTML = `${minutes}:${seconds}`;
     time--;
 
     console.log(time)
